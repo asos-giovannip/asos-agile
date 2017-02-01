@@ -11,11 +11,13 @@
   border-bottom: 2px solid #ddd;
   padding: 20px;
   color: black;
+  margin-bottom: 30px;
 }
 
 .App-header-logo {
   font-weight: bold;
   margin-left: -20px;
+  font-size: 20px;
 }
 
 .App-logo {
@@ -23,13 +25,121 @@
 }
 
 .Screen {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -moz-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  background-color: #fff;
+  margin: 0 auto;
   width: 100%;
+  max-width: 690px;
+  padding: 50px 15px 50px;
+  border: 1px solid #ddd;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.Screen form {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Screen form input {
+  display: block;
+  margin: 10px auto 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.Screen form label {
+  text-align: left;
+  display: block;
+  max-width: 300px;
+  margin: 25px auto 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #797979;
+}
+
+.Screen form input[type="text"] {
+    padding: 15px 0px 15px 10px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #dddddd;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.Screen form input[type="text"]:focus {
+  border-color: #0770cf;
+  outline: none;
+}
+
+.Screen form input[type="submit"] {
+  margin-top: 30px;
+}
+
+.Screen .btn {
+    display: block;
+    padding: 15px 0px;
+    background: #2d2d2d;
+    color: #fff;
+    margin-bottom: 20px;
+    max-width: 300px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 100%;
+}
+
+.Screen .btn:hover {
+    background: #000;
+}
+
+.Screen .btn.secondry {
+    background: #fff;
+    color: #000;
+    border: 2px solid #dddddd;
+}
+
+.Screen .btn.secondry:hover {
+    background: #eeeeee;
+}
+
+.Screen h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+
+.Screen h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+
+.Screen h2 span {
+  font-size: 25px;
+}
+
+.Screen p {
+  font-weight: 400;
+  margin-bottom: 40px;
+  padding: 0 15px;
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: 0.4px;
 }

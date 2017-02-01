@@ -11,9 +11,11 @@ var Home = React.createClass({
   render: function() {
     return (
         <div className="Home">
+            <h2>We jammin'! <span>🎷</span></h2>
+            <p>Minimal. Clean. Simple.</p>
             <ul className="Home-links">
-                <li><Link className="secondry" to="/session/host">Create a new session</Link></li>
-                <li><Link to="/session/join">Join a session</Link></li>
+                <li><Link className="btn secondry" to="/session/create">Create a new session</Link></li>
+                <li><Link className="btn" to="/session/join">Join a session</Link></li>
             </ul>
             <RecentSessionsList/>
         </div>
