@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 20px;
+}
+
+.App-header {
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+  padding: 20px;
+  color: black;
+}
+
+.App-header-logo {
+  font-weight: bold;
+  margin-left: -20px;
+}
+
+.App-logo {
+  float: left;
+}
+
+.Screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
