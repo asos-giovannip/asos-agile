@@ -10,7 +10,7 @@ var Join = React.createClass({
     return (
       <div className="Join">
         <form className='joinSessionForm' onSubmit={this.handleSubmit}>
-          <h2><span>😀</span> it's time to jam</h2>
+          <h2><span>😎</span> it's time to jam</h2>
           <p>To join your team enter your name and the unique name for this session</p>
           <label>Your name:</label>
           <input type='text' placeholder='Your name' ref='author' />
