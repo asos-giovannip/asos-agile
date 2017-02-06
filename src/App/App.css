@@ -81,6 +81,21 @@
   margin-top: 30px;
 }
 
+.Screen form input[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.Screen form .warning {
+  background: #f9e7ec;
+  text-align: left;
+  margin: 0px auto;
+  max-width: 300px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  font-weight: 600;
+}
+
 .Screen .btn {
     display: block;
     padding: 15px 0px;

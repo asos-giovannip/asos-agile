@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactFireMixin from 'reactfire';
-import { browserHistory } from 'react-router';
+//import { browserHistory } from 'react-router';
 import './Mestro.css';
 
 var Mestro = React.createClass({
@@ -8,7 +8,7 @@ var Mestro = React.createClass({
 
    getInitialState: function() {
     return {
-      jammins: {},
+      jam: {},
       username: '',
       name: ''
     };
@@ -16,7 +16,7 @@ var Mestro = React.createClass({
 
   componentWillMount: function() {
     this.firebaseRef = window.firebase.database().ref('jammins');
-    this.bindAsArray(this.firebaseRef.limitToLast(25), 'jammins');
+    this.bindAsArray(this.firebaseRef.orderByChild("name").equalTo(this.props.params.id), 'jam');
   },
 
   componentWillUnmount: function() {
@@ -25,7 +25,7 @@ var Mestro = React.createClass({
 
   render: function() {
     return (
-      <div className="Mestro"></div>
+      <div className="Mestro">{this.state.jam.name}</div>
     );
   }
 });

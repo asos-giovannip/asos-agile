@@ -33,8 +33,8 @@ var RecentSessionsList = React.createClass({
     };
     return (
         <div className="RecentSessionsList">
-            <h3>Recent Sessions</h3>
-            <ul>{ this.state.jammins.map(createItem) }</ul>
+              <h3>Recent Sessions</h3>
+              <ul>{ this.state.jammins.map(createItem) }</ul>
         </div>
     );
   }

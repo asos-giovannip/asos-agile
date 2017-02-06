@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactFireMixin from 'reactfire';
-import { browserHistory } from 'react-router';
+//import { browserHistory } from 'react-router';
 import './Voice.css';
 
 var Voice = React.createClass({
